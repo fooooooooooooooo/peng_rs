@@ -1,0 +1,6 @@
+/target
+/Cargo.lock
+cmake-build-debug/
+.idea/
+.vscode/
+logs/
