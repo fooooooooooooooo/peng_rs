@@ -8,7 +8,15 @@ add_subdirectory(PengEngine)
 add_library(
     peng_wrapper
     SHARED
-    wrapper/engine.h
-    wrapper/engine.cpp)
+    wrapper/wrapper.h
+    wrapper/w_engine.h
+    wrapper/w_engine.cpp
+    wrapper/w_vector2.cpp
+    wrapper/w_vector2.h
+    wrapper/w_vector2.cpp
+    wrapper/w_logging.cpp
+    wrapper/w_logging.h
+    wrapper/w_window_subsystem.cpp
+    wrapper/w_window_subsystem.h)
 
 target_link_libraries(peng_wrapper PUBLIC peng)

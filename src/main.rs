@@ -1,11 +1,10 @@
-use peng_rs::ffi::{self};
-use peng_rs::{Asset, PengEngine, SceneLoader, Vector2i, WindowSubsystem};
+use peng_rs::{PengEngine, SceneLoader, Vector2i, WindowIconAsset, WindowSubsystem};
 
 fn main() {
   let engine = PengEngine::new();
 
   engine.on_initialized(|| {
-    let icon = Asset::<ffi::WindowIcon>::new("resources/textures/core/peng_engine_64.asset");
+    let icon = WindowIconAsset::new("resources/textures/core/peng_engine_64.asset");
     icon.load().use_icon();
 
     let scene_loader = SceneLoader::new("resources/scenes/demo/pong.json");

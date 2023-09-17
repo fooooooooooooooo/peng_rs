@@ -10,4 +10,5 @@ cxx = "1.0.107"
 libffi = "3.2.0"
 
 [build-dependencies]
+bindgen = "0.68.1"
 cxx-build = "1.0.107"
