@@ -1,4 +1,8 @@
-use peng_rs::{PengEngine, SceneLoader, Vector2i, WindowIconAsset, WindowSubsystem};
+use peng_rs::core::engine::PengEngine;
+use peng_rs::math::vector2::Vector2i;
+use peng_rs::rendering::window_icon::WindowIconAsset;
+use peng_rs::rendering::window_subsystem::WindowSubsystem;
+use peng_rs::scene::SceneLoader;
 
 fn main() {
   let engine = PengEngine::new();
